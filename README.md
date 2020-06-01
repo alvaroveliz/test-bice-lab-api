@@ -1,4 +1,4 @@
-Este proyecto fue creado con Node Js + Typescript.
+Este proyecto fue creado con Node JS + Typescript.
 
 ## Scripts disponibles
 
@@ -13,6 +13,10 @@ Abre [http://localhost:5000](http://localhost:5000) para verla en el explorador.
 
 Compila la aplicación para producción en el directorio `build`.<br />
 
+### `npm run test`
+
+Ejecuta las pruebas unitarias de los controladores.<br />
+
 ## ¿Dónde puedo ver el proyecto?
 
-Está subido en Heroku, en la siguiente url: [https://av-test-ripley-api.herokuapp.com/](https://av-test-ripley-api.herokuapp.com/)
+Está subido en Heroku, en la siguiente url: [https://av-test-bice-lab-api.herokuapp.com/](https://av-test-bice-lab-api.herokuapp.com/)

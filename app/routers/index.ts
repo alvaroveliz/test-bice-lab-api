@@ -1,5 +1,5 @@
 import express from 'express';
-import ProductsRoutes from './products';
+import IndicatorsRoutes from './indicators';
 
 const apiRouter: express.Router = express.Router();
 
@@ -8,6 +8,6 @@ apiRouter.get('/', (req, res, next) => {
     next();
 });
 
-apiRouter.use('/products', ProductsRoutes);
+apiRouter.use('/indicators', IndicatorsRoutes);
 
 export default apiRouter;

@@ -14,7 +14,7 @@ app.use(cors());
 
 // Health check
 app.get('/', (req, res) => {
-    res.send('Hello');
+    res.send('Hello BCI LAB');
 });
 
 // Router
