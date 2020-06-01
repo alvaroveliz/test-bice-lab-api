@@ -14,7 +14,30 @@ app.use(cors());
 
 // Health check
 app.get('/', (req, res) => {
-    res.send('Hello BICE LAB');
+    const hello = {
+        hello: 'Hello BICE LAB',
+        methods: [
+            {
+                url_params: '/api/indicators/last',
+                descriptor: 'Método que entrega los ultimos valores de los elementos',
+                structure: {
+                    base_url: '/api/indicators/last',
+                    params: null,
+                },
+            },
+            {
+                url_params: '/api/indicators/:key/values',
+                descriptor: 'Método que entrega los ultimos valores de un elemento en particular',
+                structure: {
+                    base_url: '/api/indicators/last',
+                    params: {
+                        key: 'cobre|dolar|euro|ipc|ivp|oro|plata|uf|utm|yen',
+                    },
+                },
+            },
+        ],
+    };
+    res.send(hello);
 });
 
 // Router
